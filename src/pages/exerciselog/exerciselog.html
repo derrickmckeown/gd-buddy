@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Exercise Log
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label color="primary" stacked>Workout Type</ion-label>
+            <ion-select [(ngModel="workouttype")]>
+                <ion-option value="intense">Intense</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Duration</ion-label>
+            <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Time</ion-label>
+            <ion-input type="number"></ion-input>
+        </ion-item>
+            <button ion-button block>Add to Log</button>
+    </ion-list>
+</ion-content>

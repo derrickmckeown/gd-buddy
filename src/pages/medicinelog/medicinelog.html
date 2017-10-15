@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Medicine Log
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label color="primary" stacked>Insulin Type</ion-label>
+            <ion-select [(ngModel)]="insulintype">
+                <ion-option value="Rapid">Rapid</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Amount</ion-label>
+            <ion-select [(ngModel)]="amount">
+                <ion-option value="u100">U-100</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Time</ion-label>
+            <ion-input type="number"></ion-input>
+        </ion-item>
+            <button ion-button block>Add to Log</button>
+    </ion-list>
+</ion-content>

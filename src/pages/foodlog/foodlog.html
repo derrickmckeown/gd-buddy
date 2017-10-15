@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Food Log
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label color="primary" stacked>Food, Drink, or Supplement</ion-label>
+            <ion-textarea></ion-textarea>
+            <p><em>Sperate each item with a comma</em></p>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Meal Type</ion-label>
+            <ion-select [(ngModel)]="mealtype">
+                <ion-option value="breakfast">Breakfast</ion-option>
+                <ion-option value="Lunch">Lunch</ion-option>
+                <ion-option value="Dinner">Dinner</ion-option>
+                <ion-option value="snack">Snack</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Time</ion-label>
+            <ion-input type="number"></ion-input>
+        </ion-item>
+            <button ion-button block>Add to Log</button>
+    </ion-list>
+</ion-content>

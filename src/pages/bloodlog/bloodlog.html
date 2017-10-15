@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Add Blood
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+        <ion-item>
+            <ion-label for="blood-level" color="primary" stacked>Blood Sugar Level</ion-label>
+            <ion-input class="blood-level" type="number" [(ngModel)]="bloodSugar"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label for="blood-time" color="primary" stacked>Time</ion-label>
+            <ion-input class="blood-time" type="time" [(ngModel)]="time"></ion-input>
+        </ion-item>
+            <button ion-button block (click)="createBloodlog(bloodsugar, time)">Add to Log</button>
+            <!-- <button ion-button block clear [navPush]="blood">Cancel</button> -->
+</ion-content>
