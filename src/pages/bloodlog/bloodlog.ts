@@ -4,6 +4,12 @@ import { ProfilePage } from '../profile/profile';
 import { BloodPage } from '../blood/blood';
 import { BloodData } from '../../providers/blood-data';
 
+// PAGE JS
+var d = new Date(); 
+var y = d.getFullYear(); 
+alert(y);
+
+// COMPONENT
 @Component({
   selector: 'page-bloodlog',
   templateUrl: 'bloodlog.html'
@@ -14,8 +20,8 @@ export class BloodlogPage {
     this.bloodData = bloodData;
   }
   
-  createBloodlog(bloodSugar: string, bloodTime: string) {
-    this.bloodData.createBloodlog(bloodSugar, bloodTime).then( () => {
+  updateBlood(bloodSugar: string, bloodTime: string) {
+    this.bloodData.updateBlood(bloodSugar, bloodTime).then( () => {
       this.navCtrl.pop();
     });
   }

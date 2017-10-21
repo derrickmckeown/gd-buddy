@@ -16,12 +16,11 @@ export class BloodData {
   getUserProfile(): any {
     return this.userProfile.child(this.currentUser.uid);
   }
-
+  
   updateBlood(bloodSugarLevel: string, time: string): any {
-    return this.userProfile.child(this.currentUser.uid).child("user").child("blood").update({
-        bloodSugarLevel: bloodSugarLevel,
-        time: time
-    });
-  }
-
+        return this.userProfile.child(this.currentUser.uid).child("blood").child('2017-10-15').child('entry').update({
+            bloodSugarLevel: bloodSugarLevel,
+            time: time
+        });
+   }
 }
