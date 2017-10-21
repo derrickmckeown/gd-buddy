@@ -1,6 +1,6 @@
 import { NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
-import { ProfilePage } from '../profile/profile';
+// import { ProfilePage } from '../profile/profile';
 import { BloodPage } from '../blood/blood';
 import { BloodData } from '../../providers/blood-data';
 

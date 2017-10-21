@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { BloodlogPage } from '../bloodlog/bloodlog';
 import { ProfilePage } from '../profile/profile';
-import { BloodData } from '../../providers/blood-data';
+// import { BloodData } from '../../providers/blood-data';
 
 /* FACEBOOK AUTH */
 import { Facebook } from 'ionic-native';
